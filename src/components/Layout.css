@@ -1,0 +1,62 @@
+ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none
+}
+
+li {
+  margin-right: 30px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+ul li a {
+    color: #000;
+}
+   
+ul li a:hover {
+    color: #00a8ff;
+}
+   
+ul li a.active {
+    color: #001aff;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+.name {
+    height: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 0.4em;
+    min-width: 200px;
+    max-width: 900px; 
+    padding: 0 1rem;
+}
+
+.main {
+    font-size: 1.1em;
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 900px; 
+    padding: 0 1rem; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+  
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font: 1em/1.3em sans-serif;
+}

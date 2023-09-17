@@ -1,7 +1,7 @@
 {
   "name": "webdemo",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://traceylum1.github.io/traceylum",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

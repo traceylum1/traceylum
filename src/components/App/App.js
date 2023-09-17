@@ -10,9 +10,9 @@ import Layout from '../Layout';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/traceylum">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route exact path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="Learning" element={<Learning />} />

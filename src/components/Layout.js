@@ -12,13 +12,13 @@ const Layout = () => {
               <NavLink to="/">home</NavLink>
             </li>
             <li>
-              <NavLink to="/About">about</NavLink>
-            </li>
-            <li>
               <NavLink to="/Learning">learning</NavLink>
             </li>
             <li>
               <NavLink to="/Projects">projects</NavLink>
+            </li>
+            <li>
+              <NavLink to="/About">about</NavLink>
             </li>
           </ul>
         </nav>

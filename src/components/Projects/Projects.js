@@ -4,7 +4,18 @@ export default function Projects() {
     return (
       <>
         <h1>Projects</h1>
-        <p>this is the projects page</p>
+
+        <h2>
+          Projects to come:
+        </h2>
+
+        <p>
+          tic-tac-toe
+        </p>
+
+        <p>
+          calculator
+        </p>
       </>
     );
 }

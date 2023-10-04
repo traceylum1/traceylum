@@ -41,7 +41,7 @@ a:-webkit-any-link {
 }
 
 .main {
-    font-size: 1.1em;
+    font: 1.1em/1.5em sans-serif;
     margin: 0 auto;
     min-width: 200px;
     max-width: 900px; 
@@ -52,11 +52,27 @@ a:-webkit-any-link {
 }
   
 h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: center;
+    margin: 0.5em;
+}
+
+h2 {
+    font-size: 1.0em;
     margin: 0;
 }
 
 p {
-    font: 1em/1.3em sans-serif;
+    margin: 0.8em;
 }
+
+img {
+    width: 600px;
+    position: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

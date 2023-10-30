@@ -1,0 +1,6 @@
+.background {
+    background-color: aliceblue;
+    border-style: double;
+    border-color: rgb(203, 231, 255);
+    padding: 1.5ex;
+}

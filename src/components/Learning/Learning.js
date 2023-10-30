@@ -14,12 +14,10 @@ export default function Learning() {
           iteratively fried my brain for a good couple days until I had to look up the solutions. Working to understand the solutions put my brain right 
           back into the fryer.
         </p>
-
         <p>
           After doing so much work with traversing binary search trees, I figured that to implement one would simply be a matter of putting together all my 
           gained knowledge of them. That also turned out to be false. I am yet again faced with the reality that CS will always find a way to kick my butt.
         </p>
-
         <p>
           Ryan has told me to spend a week on it. I'm not sure if that will be possible at my pace, but we will find out.
         </p>
@@ -33,7 +31,6 @@ export default function Learning() {
           Therefore, I have accumulated a hefty backlog of things to share. I won't get to all of them in this post, but I'll touch on the 
           ones currently on my mind.
         </p>
-
         <p>
           Today I started learning about binary trees. The recursive solution to the Fibonacci sequence is an example of a binary tree, 
           because each function call recursively calls itself two other times, with (n - 1) and (n - 2). Here, the function uses 
@@ -43,16 +40,13 @@ export default function Learning() {
           a binary search tree: <strong> pre order traversal</strong>, <strong> post order traversal</strong> and <strong> in order traversal</strong>. I 
           will elaborate on them further when I've done more work with binary search trees.
         </p>
-
         <img src="https://i.stack.imgur.com/2dxLl.png" alt="Fibonacci sequence recursive tree" class="center"></img>
-
         <p>
           On another note, I feel like nearly every other day is a new battle with imposter syndrome. Self-doubt is always creeping just below the 
           surface, waiting for any and every opportunity to pounce. But, I know I just have to keep reminding myself that CS is not easy, and it's 
           unlikely that I'm struggling much harder than everyone else who learned this stuff.
         </p>
       </article>
-
 
     </>
     );

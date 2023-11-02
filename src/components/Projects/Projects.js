@@ -11,14 +11,11 @@ export default function Projects() {
         </h2>
 
         <p>
-          tic-tac-toe
-        </p>
-
-        <p>
           calculator
         </p>
-
-        <News />
+        <h2>News API with React</h2>
+        <div className='background'><News /></div>
+        
       </>
     );
 }

@@ -1,62 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './News.css'
 
 export default function News() {
-  let urls = []
-    fetch('https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=fe748c16870c429e95f4dfd6c85baf11')
-	.then((response) => response.json())
-	.then((data) => {
-    for (let i = 0; i < Math.min(5, data.articles.length); i++) {
-        document.getElementById("post-title-" + i).innerHTML = data.articles[i].title;
-        document.getElementById("post-body-" + i).innerHTML = data.articles[i].description;
-        urls.push("<a href=" + "'" + data.articles[i].url + "'" + '>Read more</a>' )
-      }
-      console.log(urls)
-    })
-	.catch((err) => {console.log(err.message);});
-    return (
-      <>
-        <div className='background'>
-          <h2>Today's Science News Headlines</h2>
-
-          <ol>
-            <li>
-              <div className='news'>
-                <div id="post-title-0"></div>
-                <p id="post-body-0"></p>
-              </div>
-          </li>
-
-            <li>
-              <div className='news'>
-                <div id="post-title-1"></div>
-                <p id="post-body-1"></p>
-              </div>
-            </li>
-
-            <li>
-              <div className='news'>
-                <div id="post-title-2"></div>
-                <p id="post-body-2"></p>
-              </div>
-            </li>
-
-            <li>
-              <div className='news'>
-                <div id="post-title-3"></div>
-                <p id="post-body-3"></p>
-              </div>
-            </li>
-
-            <li>
-              <div className='news'>
-                <div id="post-title-4"></div>
-                <p id="post-body-4"></p>
-              </div>
-            </li>
-          </ol>
-
-        </div>
-      </>
-      );
-    }
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+     fetch('https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=fe748c16870c429e95f4dfd6c85baf11')
+        .then((response) => response.json())
+        .then((data) => {
+           console.log(data);
+           setPosts(data.articles);
+        })
+        .catch((err) => {
+           console.log(err.message);
+        });
+  }, []);
+  return (
+    <>
+    <h2 className='header'>Today's Science News Headlines</h2>
+     <div className="posts-container">
+     {posts.slice(0, 5).map((post) => {
+        if (post.source.name !== "[Removed]") {
+        return (
+           <div className="post-card" key={post.source.name}>
+              <h2 className="post-title">{post.title}</h2>
+              <p className="post-body">{post.description} <a href={post.url} target="_blank">Read More</a></p> 
+           </div>
+        );
+        }
+     })}
+  </div>
+  </>
+  );
+}

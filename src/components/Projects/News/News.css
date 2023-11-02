@@ -4,3 +4,17 @@
     border-color: rgb(203, 231, 255);
     padding: 1.5ex;
 }
+
+.post-title {
+    font-size: 0.95em;
+}
+
+.post-body {
+    font-size: 0.9em;
+}
+
+.header {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 1.2em
+}

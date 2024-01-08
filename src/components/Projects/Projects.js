@@ -5,6 +5,7 @@ export default function Projects() {
     return (
       <>
         <h1>Projects</h1>
+        <p> hello </p>
 
         <h2>
           Projects to come:

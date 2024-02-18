@@ -1,11 +1,11 @@
 import React from 'react';
 import News from './News/News'
+import Calculator from './Calculator/Calculator'
 
 export default function Projects() {
     return (
       <>
         <h1>Projects</h1>
-        <p> hello </p>
 
         <h2>
           Projects to come:
@@ -14,7 +14,9 @@ export default function Projects() {
         <p>
           calculator
         </p>
-        <h2>News API with React</h2>
+        <h2>Calculator</h2>
+        <Calculator />
+        <h2>Headlines from News API</h2>
         <div className='background'><News /></div>
         
       </>

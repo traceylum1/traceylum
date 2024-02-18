@@ -34,10 +34,10 @@ export default function Learning() {
         <p>
           Today I started learning about binary trees. The recursive solution to the Fibonacci sequence is an example of a binary tree, 
           because each function call recursively calls itself two other times, with (n - 1) and (n - 2). Here, the function uses 
-          <strong> DFP</strong> (depth first search) to find the solution, evaluating all the (n - 1) calls first, then going back up to evaluate 
-          the (n - 2) calls and returning them to the parent node. Aside from DFP, there is also <strong> BFP</strong> (breadth first search), which 
+          <strong> DFS</strong> (depth first search) to find the solution, evaluating all the (n - 1) calls first, then going back up to evaluate 
+          the (n - 2) calls and returning them to the parent node. Aside from DFP, there is also <strong> BFS</strong> (breadth first search), which 
           evaluates both left and right children of the parent node before continuing down the tree. There are also three ways to traverse 
-          a binary search tree: <strong> pre order traversal</strong>, <strong> post order traversal</strong> and <strong> in order traversal</strong>. I 
+          a binary search tree: <strong> preorder traversal</strong>, <strong> postorder traversal</strong> and <strong> inorder traversal</strong>. I 
           will elaborate on them further when I've done more work with binary search trees.
         </p>
         <img src="https://i.stack.imgur.com/2dxLl.png" alt="Fibonacci sequence recursive tree" class="center"></img>

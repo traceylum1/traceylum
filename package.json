@@ -2,7 +2,7 @@
   "name": "webdemo",
   "version": "0.1.0",
   "homepage": "https://traceylum1.github.io/traceylum",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.1.1"
   }
 }

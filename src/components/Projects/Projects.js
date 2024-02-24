@@ -10,11 +10,11 @@ export default function Projects() {
         <h2>Projects to come:</h2>
 
         <p>improved calculator</p>
-        
+
         <h2>Oversimplified Calculator</h2>
         <Calculator />
-        <h2>Headlines from News API</h2>
-        <div className='background'><News /></div>
+        {/* <h2>Headlines from News API</h2>
+        <div className='background'><News /></div> */}
         
       </>
     );

@@ -9,7 +9,7 @@ export default function Learning() {
       <article>
         <h2>10-4-2023</h2>
         <p>
-          I have been working on <strong> Binary Search Trees</strong> for the past few days, and they just get more and more complicated. Figuring out 
+          I have been working on <strong>Binary Search Trees</strong> for the past few days, and they just get more and more complicated. Figuring out 
           how to traverse them recursively inorder, preorder, and postorder already posed a huge challenge. Trying to figure out how to traverse them 
           iteratively fried my brain for a good couple days until I had to look up the solutions. Working to understand the solutions put my brain right 
           back into the fryer.
@@ -19,7 +19,7 @@ export default function Learning() {
           gained knowledge of them. That also turned out to be false. I am yet again faced with the reality that CS will always find a way to kick my butt.
         </p>
         <p>
-          Ryan has told me to spend a week on it. I'm not sure if that will be possible at my pace, but we will find out.
+          My CS mentor Ryan has told me to spend a week on it. I'm not sure if that will be possible at my pace, but we will find out.
         </p>
 
       </article>

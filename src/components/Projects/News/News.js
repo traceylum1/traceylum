@@ -8,18 +8,17 @@ export default function News() {
         .then((response) => response.json())
         .then((data) => {
          //   console.log(data);
-            data = data.slice(0,5)
-            setPosts(data.articles);
+           setPosts(data.articles);
         })
         .catch((err) => {
-            console.log(err.message);
+           console.log(err.message);
         });
   }, []);
   return (
     <>
     <h2 className='header'>Today's Science News Headlines</h2>
      <div className="posts-container">
-     {posts.map((post) => {
+     {posts.slice(0, 5).map((post) => {
         if (post.source.name !== "[Removed]") {
          return (
             <div className="post-card" key={post.source.name}>
